@@ -1,4 +1,3 @@
-import  homeBg1  from "../assets/imgs/home_bg/home-bg-1.jpeg";
 import  homeBg2  from "../assets/imgs/home_bg/home-bg-2.jpeg";
 import  homeBg3  from "../assets/imgs/home_bg/home-bg-3.jpeg";
 import  homeBg4  from "../assets/imgs/home_bg/home-bg-4.jpeg";
@@ -9,8 +8,8 @@ export const Home = () => {
     return (
         <div className="home flex column place-center">
             <div className='images-wrapper flex'>
-            {imagesArray.map(image =>
-                <div className="image-wrapper">
+            {imagesArray.map((image, index) =>
+                <div className="image-wrapper" key={index}>
                     <img src={image} alt=""/>
                     <div className='above-image-content flex place-center justify-center'>Lorem, ipsum.</div>
                 </div>
