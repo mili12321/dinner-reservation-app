@@ -1,7 +1,7 @@
 {
     "name": "dinner-reservation-app",
     "version": "0.1.0",
-    "homepage": "https://mili12321.github.io/dinner-reservation-app",
+    "homepage": "https://mili12321.github.io/dinner-reservation-app/",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.9.3",
