@@ -1,0 +1,49 @@
+.select-meal-wrapper {}
+
+.meal-description-wrapper {
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    top: 44px;
+    right: 0;
+    bottom: 0;
+    padding: 25px 50px;
+}
+
+.meal-image {
+    margin-bottom: rem(15px);
+    max-width: 600px;
+    >img {
+        width: 100%;
+    }
+}
+
+.information-header,
+.description {
+    margin-bottom: rem(25px);
+}
+
+.information-header {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    min-height: 100px;
+    color: #5a5a5a;
+}
+
+.additional-meal-information {
+    font-size: 20px;
+}
+
+.additional-info-wrapper {
+    .icon {
+        margin-right: 10px;
+        >img {
+            width: 100%;
+        }
+        width: 35px;
+    }
+}
