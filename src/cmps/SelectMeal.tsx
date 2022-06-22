@@ -29,7 +29,7 @@ export const SelectMeal = ({mealType, currentMeal, currentMealIndex, updateMeals
 
     
     return (
-        <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+        <FormControl sx={{ m: 1, minWidth: 200 }} size="small">
             <InputLabel id={`${mealType}-inputLabel-select`}>
                 {mealType}
             </InputLabel>

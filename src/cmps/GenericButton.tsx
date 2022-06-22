@@ -29,6 +29,8 @@ export const GenericButton = ( { variant, color, size, isDisabled, startIcon, en
              size={size}
              disabled={isDisabled} 
              onClick={onHandleClick}
+             startIcon={startIcon}
+             endIcon={endIcon}
             >{text}</Button>
         </Stack>
     )

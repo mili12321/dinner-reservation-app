@@ -1,1 +1,48 @@
-.home {}
+.home {
+    background-color: #42443F;
+    height: 100vh;
+    .images-wrapper {
+        height: 650px;
+        overflow: hidden;
+    }
+    .image-wrapper {
+        width: 100%;
+        position: relative;
+        height: 650px;
+        overflow: hidden;
+        >img {
+            width: 100%;
+        }
+        .above-image-content {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #fff;
+            font-size: rem(40px);
+            background-color: rgba(17, 17, 17, 0.582);
+        }
+        &:hover {
+            .above-image-content {
+                opacity: 1;
+                transition: opacity 0.5s ease;
+                font-family: $regular-dancingScript-font;
+            }
+        }
+    }
+    .home-content-wrapper {
+        color: #fff;
+        .title {
+            font-size: rem(48px);
+            margin: rem(45px) 0 rem(15px) 0;
+        }
+        .content {
+            font-size: rem(24px);
+            margin-right: rem(15px);
+            color: #BF9E7C;
+            // color: #6F7782;
+        }
+    }
+}

@@ -5,7 +5,6 @@ import { fromBeginningToIthElement } from "../../../utils/fromBeginningToIthElem
 import { IOrder, OrderContextType } from "../../../interfaces/order.interface"
 import { GenericButton } from "../../../cmps/GenericButton"
 import { ButtonColorTypes, ButtonSizeTypes, ButtonVariantTypes } from "../../../types/buttonTypes"
-import AlarmIcon from '@mui/icons-material/Alarm';
 import { useContext } from "react"
 import { OrderContext } from "../../../context/orderContext/OrderProvider"
 import { MealDescriptionWrapper } from "../../../cmps/MealDescriptionWrapper";
@@ -89,7 +88,6 @@ export const Order = ({order}:Props) => {
                 color={ButtonColorTypes.SECONDARY} 
                 size={ButtonSizeTypes.SMALL} 
                 isDisabled={false} 
-                endIcon={<AlarmIcon fontSize="inherit"/>}
                 text={'remove'}
                 handleClick={removeCurrentOrder}
             />}

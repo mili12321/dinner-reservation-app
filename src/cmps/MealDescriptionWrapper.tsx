@@ -28,24 +28,31 @@ export const MealDescriptionWrapper = ({hoverdMenueItem}:Props) => {
         )
     }
 
-    if(!hoverdMenueItem) return null
     return (
-        <div className='meal-description-wrapper fade-in active flex column place-center'>
-            <div className='meal-image'><img src={hoverdMenueItem.image} alt="bacon_King_Burger" /></div>
-            <div className="information-wrapper flex column">
-                <div className="information-header flex space-between place-center">
-                    <div className="title">{hoverdMenueItem.title}</div>
-                    <div className="price">${hoverdMenueItem.price}</div>
+        <div className={`meal-description-wrapper fade-in active flex column place-center ${hoverdMenueItem?'menu-item-additional-style':''}`}>
+            {
+                hoverdMenueItem?
+                <>
+                    <div className='meal-image'><img src={hoverdMenueItem.image} alt="bacon_King_Burger" /></div>
+                    <div className="information-wrapper flex column">
+                        <div className="information-header flex space-between place-center">
+                            <div className="title">{hoverdMenueItem.title}</div>
+                            <div className="price">${hoverdMenueItem.price}</div>
+                        </div>
+                        <div className="description">{hoverdMenueItem.desc}</div>
+                        <div className="additional-meal-information flex space-between">
+                            {['rate', 'calories', 'prepTime'].map((item, idx)=>
+                                <React.Fragment key={`additional-meal-information-${idx}`}>
+                                    {getDesignInformation({key: item, val: hoverdMenueItem[item  as keyof typeof hoverdMenueItem]})}
+                                </React.Fragment>
+                            )}
+                        </div>
+                    </div>
+                </>
+                :
+                <div className="dinner-reservation-side-hero">
                 </div>
-                <div className="description">{hoverdMenueItem.desc}</div>
-                <div className="additional-meal-information flex space-between">
-                    {['rate', 'calories', 'prepTime'].map((item, idx)=>
-                        <React.Fragment key={`additional-meal-information-${idx}`}>
-                            {getDesignInformation({key: item, val: hoverdMenueItem[item  as keyof typeof hoverdMenueItem]})}
-                        </React.Fragment>
-                    )}
-                </div>
-            </div>
+            }
         </div>
     )
 }

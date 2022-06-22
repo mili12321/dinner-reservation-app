@@ -7,9 +7,9 @@ import pancakes from '../assets/imgs/pancakes.png'
 import spaghetti_bolognese from '../assets/imgs/spaghetti_bolognese.png'
 import steamed_Buns from '../assets/imgs/Steamed_Buns.png'
 import sweet_potato_fries from '../assets/imgs/Sweet_potato_fries.png'
-import chocolate_cake from '../assets/imgs/chocolate_cake.jpg'
-import beef_sashimi from '../assets/imgs/beef_sashimi.jpg'
-import teriyaki_salmon from '../assets/imgs/Teriyaki_salmon.jpg'
+import chocolate_cake from '../assets/imgs/chocolate_cake.png'
+import beef_sashimi from '../assets/imgs/beef_sashimi.png'
+import teriyaki_salmon from '../assets/imgs/Teriyaki_salmon.png'
 
 export const menuItems: {[key:string]:IMenuItem[]} = {
     first: [

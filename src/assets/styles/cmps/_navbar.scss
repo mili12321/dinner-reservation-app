@@ -1,11 +1,13 @@
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
     color: $clr2;
-    background: linear-gradient(to right, #004e92, #000428);
+    // background: linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #3b3b3b, #090604);
+    background: #090604;
     padding: rem(10px) rem(30px);
     max-height: rem(44px);
     .links-wrapper {
@@ -13,8 +15,12 @@
         >div {
             margin-right: rem(20px);
             &::before {
-                background-color: $clr2;
+                background-color: #BF9E7C;
             }
         }
+    }
+    .logo {
+        color: #BF9E7C;
+        font-family: $regular-dancingScript-font;
     }
 }

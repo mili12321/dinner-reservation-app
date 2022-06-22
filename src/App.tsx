@@ -4,10 +4,10 @@ import { Navbar } from './cmps/Navbar';
 import {routes} from './routes.js'
 import { componentTypes } from './utils/componentTypes';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { green, purple, red } from '@mui/material/colors';
 import { CssBaseline, PaletteMode } from '@mui/material';
 import { ColorModeContext } from './context/ColorModeContext';
 import { OrderProvider } from './context/orderContext/OrderProvider';
+import { NavigateBackBtn } from './cmps/NavigateBackBtn';
 
 
 const getDesignTheme = (mode: PaletteMode) => ({
@@ -86,6 +86,7 @@ function App() {
           <CssBaseline/>
           <Router>
             <Navbar/>
+            <NavigateBackBtn/>
             <Routes>
               {routes.map((route) => (
                 <Route

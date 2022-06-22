@@ -1,8 +1,22 @@
 .dinner-reservation-page {
-    .title {
+    .dinner-reservation-card-wrapper {
+        border-radius: $default-border-radius;
+        box-shadow: $light-font-gray-shadow;
+        padding: rem(24px);
+        min-width: rem(909px);
+        margin-left: rem( 20px);
+        overflow: hidden;
+        .inner-wrapper {
+            max-height: rem(688px);
+            overflow: auto;
+        }
+    }
+    .main-title {
         font-size: rem(24px);
         font-weight: bold;
-        margin: rem(40px) 0;
+        margin-bottom: rem(24px);
+        width: 100%;
+        text-align: center;
     }
     .dinner-reservation-list {
         width: 100%;
@@ -13,5 +27,30 @@
 .order-wrapper {
     .order-name {
         margin-right: rem(10px);
+        min-width: rem(110px);
     }
+    button {
+        margin-left: 20px;
+    }
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 35px;
+}
+
+// /* Track */
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(184, 184, 184);
+    border-radius: 20px;
+    border: solid 10px transparent;
+}
+
+// /* Handle */
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px rgb(184, 184, 184);
+    border: solid 10px transparent;
+    border-radius: 20px;
 }
